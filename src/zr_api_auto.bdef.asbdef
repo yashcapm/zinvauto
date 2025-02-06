@@ -1,0 +1,30 @@
+managed
+implementation in class zbp_r_api_auto unique;
+strict ( 2 );
+
+define behavior for ZR_API_AUTO //alias <alias_name>
+//persistent table <???>
+with unmanaged save
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+  //determination AutoPost on save  {create;}
+  field ( readonly ) SalesOrder ;
+  action ( features : instance ) AutoPost result [1] $self; // Pr Create
+  action ( features : instance ) POcreate result [1] $self;
+  action ( features : instance ) GRNcreate result [1] $self;
+
+
+  factory action PostData[0..1];
+
+  mapping for ztt_so_api
+  { Salesorder = salesorder;
+    //Salesorderitem = salesorderitem;
+
+  }
+
+}

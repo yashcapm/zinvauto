@@ -1,0 +1,39 @@
+@Metadata.layer: #CORE
+@UI.headerInfo:{ 
+  typeName: 'Total Records',
+  typeNamePlural: 'Total Records'
+
+}
+annotate entity ZC_INVNEW with
+
+
+{
+  @UI.facet: [{ id : 'InvoiceMaster',
+  purpose: #STANDARD,
+  type: #IDENTIFICATION_REFERENCE,
+  label: 'Master Data',
+  position: 10 }]
+
+
+  @UI.selectionField: [{ position: 10 }]
+  @UI.lineItem: [{ position: 10 }]
+  @UI.identification: [{ position: 10 }]
+  Kunnr;
+  @UI.lineItem: [{ position: 20 }]
+  @UI.identification: [{ position: 20 }]
+  Bukrs;
+  @UI.selectionField: [{ position: 20 }]
+  @UI.lineItem: [{ position: 30 }]
+  @UI.identification: [{ position: 30 }]
+  Customerpricegroup;
+  @UI.lineItem: [{ position: 40 }]
+  @UI.identification: [{ position: 40 }]
+  Billcycle;
+  @UI.lineItem: [{ position: 50 }]
+  @UI.identification: [{ position: 50 }]
+  Billfre;
+  @UI.lineItem: [{ position: 60 }]
+  @UI.identification: [{ position: 60 }]
+  status;
+
+}

@@ -1,0 +1,4 @@
+@EndUserText.label: 'SD for API Auto'
+define service ZSD_INVAUTO02 {
+  expose ZI_SALESORDER01;
+}

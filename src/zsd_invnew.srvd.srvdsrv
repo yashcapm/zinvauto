@@ -1,0 +1,6 @@
+@EndUserText.label: 'Invoice new'
+define service Zsd_invnew {
+  expose ZC_INVNEW            as Invnew;
+  expose I_Customer           as Customer;
+  expose I_CustomerPriceGroup as PriceGroup;
+}

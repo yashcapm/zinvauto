@@ -1,0 +1,4 @@
+@EndUserText.label: 'TEST'
+define service ZSD_API_AUTO02 {
+  expose ZR_API_AUTO;
+}

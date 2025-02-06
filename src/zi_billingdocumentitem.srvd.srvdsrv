@@ -1,0 +1,4 @@
+@EndUserText.label: 'Billing Document Item View'
+define service ZI_BillingDocumentItem {
+  expose ZCI_BillingDocumentItem as BillingDocument;
+}

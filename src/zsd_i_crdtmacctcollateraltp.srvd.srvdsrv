@@ -1,0 +1,4 @@
+@EndUserText.label: 'I_CrdtMAcctCollateralTP SD'
+define service ZSD_I_CrdtMAcctCollateralTP {
+  expose I_CrdtMAcctCollateralTP;
+}

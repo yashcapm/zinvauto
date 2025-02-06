@@ -1,0 +1,15 @@
+managed implementation in class zbp_r_je_n1 unique;
+strict ( 2 );
+
+define behavior for ZR_JE_N1 //alias <alias_name>
+//persistent table <???>
+with unmanaged save
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+  field ( readonly ) SalesOrder, SalesOrderItem;
+}

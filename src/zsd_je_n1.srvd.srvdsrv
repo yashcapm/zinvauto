@@ -1,0 +1,4 @@
+@EndUserText.label: 'SD for JOURNAL ENTRY'
+define service ZSD_JE_N1 {
+  expose ZR_JE_N1 as NEW01;
+}

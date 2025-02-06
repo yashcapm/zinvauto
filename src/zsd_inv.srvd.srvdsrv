@@ -1,0 +1,4 @@
+@EndUserText.label: 'Invoice new'
+define service ZSD_INV {
+  expose ZR_INV_QUERY as Podata;
+}

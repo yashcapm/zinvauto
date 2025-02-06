@@ -1,0 +1,15 @@
+managed implementation in class zbp_c_salesorder unique;
+strict ( 2 );
+
+define behavior for ZC_SALESORDER alias _salesorder
+//persistent table <???>
+with unmanaged save
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+  field ( readonly ) SalesOrder;
+}

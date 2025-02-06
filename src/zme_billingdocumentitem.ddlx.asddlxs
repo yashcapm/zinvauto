@@ -1,0 +1,42 @@
+@Metadata.layer: #CORE
+@UI.headerInfo:{
+  typeName: 'Total Records',
+  typeNamePlural: 'Total Records'
+
+}
+annotate entity ZCI_BillingDocumentItem with
+{
+ 
+  
+  @UI.selectionField: [{ position: 10 }]
+  @UI.lineItem: [{ position: 10 }]
+  BillingDocument;
+  @UI.lineItem: [{ position: 20 }]
+  BillingDocumentItem;
+  @UI.lineItem: [{ position: 30 }]
+  SalesDocument;
+  @UI.lineItem: [{ position: 40 }]
+  SalesDocumentItem;
+//  @UI.lineItem: [{ position: 50 }]
+//  CreatedByUser;
+  @UI.selectionField: [{ position: 20 }]
+  @UI.lineItem: [{ position: 60 }]
+  CreationDate;
+//  @UI.lineItem: [{ position: 70 }]
+  @UI.selectionField: [{ position: 30 }]
+  SoldToParty;
+  @UI.lineItem: [{ position: 80 }]
+  CustomerName;
+  @UI.lineItem: [{ position: 90 }]
+  Billcycle;
+  @UI.lineItem: [{ position: 100 }]
+  Billfre;
+  @UI.lineItem: [{ position: 110 }]
+  MaterialByCustomer;
+  @UI.lineItem: [{ position: 120 }]
+  PurchaseOrderByShipToParty;
+  
+  
+
+
+}

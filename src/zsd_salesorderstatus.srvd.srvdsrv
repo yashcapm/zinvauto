@@ -1,0 +1,4 @@
+@EndUserText.label: 'Open Saleorder'
+define service ZSD_SALESORDERSTATUS {
+  expose ZC_SALESORDERSTATUS;
+}

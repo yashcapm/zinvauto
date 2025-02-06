@@ -1,0 +1,15 @@
+projection;
+strict ( 2 );
+
+define behavior for ZC_API_AUTO //alias <alias_name>
+{
+  use create;
+  use update;
+  use delete;
+
+  use action AutoPost;
+  use action POcreate;
+  use action PostData;
+  use action GRNcreate;
+
+}

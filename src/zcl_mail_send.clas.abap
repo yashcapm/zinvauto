@@ -1,0 +1,26 @@
+CLASS zcl_mail_send DEFINITION
+  PUBLIC
+  FINAL
+  CREATE PUBLIC .
+
+  PUBLIC SECTION.
+
+    INTERFACES if_oo_adt_classrun .
+  PROTECTED SECTION.
+  PRIVATE SECTION.
+ENDCLASS.
+
+
+
+CLASS ZCL_MAIL_SEND IMPLEMENTATION.
+
+
+  METHOD if_oo_adt_classrun~main.
+
+
+
+
+
+.
+  ENDMETHOD.
+ENDCLASS.

@@ -1,0 +1,4 @@
+@EndUserText.label: 'SD for API Auto'
+define service ZSB_SALEORDER {
+  expose ZC_SALESORDER;
+}

@@ -1,0 +1,13 @@
+managed; //implementation in class zbp_c_invnew unique;
+//strict ( 2 );
+
+define behavior for ZC_INVNEW //alias <alias_name>
+persistent table ztt_customerbill
+lock master
+//authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+}
